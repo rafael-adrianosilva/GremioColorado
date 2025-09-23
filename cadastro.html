@@ -31,47 +31,69 @@
             </li>
         </ul>
     </div>
-    <h2>Cadastro de Alunos</h2>
-    <form>
+    <h2 style="margin-top: 50px;">Cadastro de Alunos</h2>
+    <form action="cadastro_Confirmado.html" onsubmit="return validaForm()">
         <div class="caixa">
             <legend>Nome:</legend>
-            <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
         </div>
         <div class="caixa">
             <legend>Email:</legend>
-            <input type="email" name="email" id="email" placeholder="Insira seu email">
+            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
         </div>
         <div class="caixa">
             <legend>Telefone:</legend>
-            <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone">
+            <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone" required>
         </div>
         <div class="caixa">
             <legend>Idade:</legend>
-            <input type="number" name="idade" id="idade" placeholder="Insira sua idade">
+            <input type="number" name="idade" id="idade" placeholder="Insira sua idade" required>
         </div>
         <div class="caixa">
             <legend>Turma:</legend>
-            <input type="text" name="turma" id="turma" placeholder="Insira a sua turma">
+            <input type="text" name="turma" id="turma" placeholder="Insira a sua turma" required>
         </div>
         <div class="caixa">
             <legend>Esporte favorito:</legend>
-            <input type="text" name="esporte" id="esporte" placeholder="Insira seu esporte favorito">
+            <input type="text" name="esporte" id="esporte" placeholder="Insira seu esporte favorito" required>
         </div>
         <div>
-            <legend>Receber Novidades?</legend>
+            <legend id="novidades">Receber Novidades?</legend>
             <br>
-            <div class="radio">
-            <p><input type="radio" name="novidades" id="sim" value="Sim">Sim</p>
-            <p><input type="radio" name="novidades" id="nao" value="Nao">Não</p>
+            <div class="radio" required>
+                <p><input type="radio" name="novidades" id="novidades1" value="Sim">Sim</p>
+                <p><input type="radio" name="novidades" id="novidades1" value="Nao">Não</p>
             </div>
         </div>
         <br><br>
         <div class="botao">
-            <button type="submit" onclick="finalizarCadastro()">Finalizar Cadastro</button>
+            <button type="submit">Finalizar Cadastro</button>
             <br>
             <button onclick="validarCadastro()">Gerar JSON</button>
         </div>
     </form>
+    <br><br><br><br><br>
+
+    <div id="rodape">
+        <img src="_img/gremiocolorado.png" alt="" id="logoRodape">
+        <div>
+            <label>Descubra mais sobre nós:</label>
+            <img src="_img/instagram.png" alt=""> <label> @gremio_colorado17</label><br>
+            <img src="_img/facebook.png" alt=""> <label> Gremio Colorado</label><br>
+            <img src="_img/twitter.png" alt=""> <label> gremio_colorado17</label><br>
+        </div>
+        <div>
+            <label>Entre em contado conosco:</label>
+            <img src="_img/tel.png" alt=""><label> 17 99144-1778</label><br>
+            <img src="_img/email.png" alt=""><label> gremio.colorado@gmail.com</label><br>
+            <img src="_img/msg.png" alt=""><label> Chat Online</label><br>
+        </div>
+        <div id="desc">
+            <label>Grêmio Colorado:</label><br>
+            <label>Grêmio Estudantil Colorado — Unidos pela paixão e coragem de transformar a escola. Representamos os
+                alunos com energia, promovendo eventos, cultura e participação ativa.</label>
+        </div>
+    </div>
 </body>
 
 </html>

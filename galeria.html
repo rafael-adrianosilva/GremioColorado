@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Fotos</title>
-    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/styleGaleria.css">
 </head>
+
 <body>
     <div class="menu">
 
@@ -29,5 +31,56 @@
         </ul>
 
     </div>
+
+    <h2 style="margin-top: 50px;">Galeria de Fotos e Videos</h2>
+
+    <!-- Galeria de Fotos -->
+    <div class="caixaDoLanches">
+        <img src="_img/fotoDogremio2.png" alt="Foto 1">
+        <img src="_img/fotoDogremio.png" alt="Foto 2">
+        <img src="_img/fotoDogremio3.png" alt="Foto 3">
+        <img src="_img/fotoDogremio4.png" alt="Foto 4">
+        <!-- Adicione mais fotos conforme necessário -->
+    </div>
+    <div class="caixaDoLanches">
+        <img src="_img/fotoDogremio5.png" alt="">
+        <img src="_img/fotoDogremio6.png" alt="">
+        <img src="_img/fotoDogremio7.png" alt="">
+        <img src="_img/fotoDogremio8.png" alt="">
+    </div>
+    <!--  Modal container-->
+
+    <div id="modal" class="modal">
+        <span class="close" id="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="_js/scriptGaleria.js"></script>
+
+    <br><br><br><br><br>
+
+    <div id="rodape">
+        <img src="_img/gremiocolorado.png" alt="" id="logoRodape">
+        <div>
+            <label>Descubra mais sobre nós:</label>
+            <img src="_img/instagram.png" alt=""> <label> @gremio_colorado17</label><br>
+            <img src="_img/facebook.png" alt=""> <label> Gremio Colorado</label><br>
+            <img src="_img/twitter.png" alt=""> <label> gremio_colorado17</label><br>
+        </div>
+        <div>
+            <label>Entre em contado conosco:</label>
+            <img src="_img/tel.png" alt=""><label> 17 99144-1778</label><br>
+            <img src="_img/email.png" alt=""><label> gremio.colorado@gmail.com</label><br>
+            <img src="_img/msg.png" alt=""><label> Chat Online</label><br>
+        </div>
+        <div id="desc">
+            <label>Grêmio Colorado:</label><br>
+            <label>Grêmio Estudantil Colorado — Unidos pela paixão e coragem de transformar a escola. Representamos os
+                alunos com energia, promovendo eventos, cultura e participação ativa.</label>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #CFB645;
 }
 
-.menu{
+.menu {
     width: 100%;
     background-color: #121211;
     text-align: center;
@@ -17,30 +17,23 @@ body{
     border-bottom: solid 3px #e5322a;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
-    position: relative;
     flex-direction: row;
-    right: 280px;
-    gap: 180px;
-    list-style: none;
+    width: 75%;
+    justify-content: space-around;
+    margin: 200px;
+    margin-top: 70px;
+    list-style-type: none;
 }
 
-.menu ul li{
-    display: flex;
-    flex-direction: row;
-    padding-inline: 18px;
+.menu a {
     text-decoration: none;
-    margin-right: 10px;
+    color: white;
+    transition: 0.8s;
 }
 
-.menu a{
-   text-decoration: none;
-   color: white;
-   transition: 0.8s;
-}
-
-ul{
+ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,16 +41,85 @@ ul{
     margin-right: 500px;
 }
 
-img{
+img {
     width: 120px;
     height: 120px;
-    margin-left:15px;
+    margin-left: 15px;
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: aliceblue;
     color: black;
     border-radius: 20px;
     padding: 10px;
     transition: 0.8s;
+}
+
+#descricao {
+    font-size: 28px;
+    color: white;
+
+}
+
+#descricaoDiv {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    height: 470px;
+    width: 750px;
+    border-radius: 30px;
+    background-color: #e5322a;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#imgG {
+    width: 500px;
+    height: 500px;
+    padding: 120px;
+    margin-top: 40px;
+    margin-left: 150px;
+    border-radius: 25%;
+}
+
+#rodape {
+    display: flex;
+    padding: 20px 40px;
+    background-color: #121211;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #e5322a;
+}
+
+#rodape img {
+    height: 30px;
+    width: 30px;
+}
+
+#rodape #logoRodape{
+    width: 120px;
+    height: 120px;
+    margin-left: -40px;
+}
+
+#rodape div {
+    padding: 0 20px;
+    border-left: 1px solid #000000;
+    border-left: none;
+}
+
+#rodape label {
+    display: block;
+}
+
+#rodape img+label {
+    display: inline;
+}
+#rodape #desc{
+    width: 400px;
 }
