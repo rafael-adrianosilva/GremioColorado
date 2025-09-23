@@ -6,37 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="_css/style.css">
+    <script src="_js/cadastro.js" defer></script>
 </head>
 
 <body>
-    <div class="container"> 
-        <div class="menu_area">
-            <div class="menu">
+        <div class="menu">
 
-                <div class="logo">
-                    <img src="_img/gremiocolorado.png" alt="Gremio Colorado Logo" id="imagem">
-                </div>
-                
-                    <ul>
-                        <li>
-                            <a href="">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="">Cadastro de Alunos</a>
-                        </li>
-                        <li>
-                            <a href="">Galeria de Fotos e Videos</a>
-                        </li>
-                        <li>
-                            <a href="">Agenda de Eventos</a>
-                        </li>
-                    </ul>
-               
+            <div class="logo">
+                <img src="_img/gremiocolorado.png" alt="Gremio Colorado Logo" id="imagem">
             </div>
+
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro de Alunos</a>
+                </li>
+                <li>
+                    <a href="">Galeria de Fotos e Videos</a>
+                </li>
+                <li>
+                    <a href="">Agenda de Eventos</a>
+                </li>
+            </ul>
+
         </div>
-    </div>
     <h2>Cadastro de Alunos</h2>
-    <form action="cadastro_Confirmado.html">
+    <form>
         <div class="caixa">
             <legend>Nome:</legend>
             <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
@@ -61,12 +58,18 @@
             <legend>Esporte favorito:</legend>
             <input type="text" name="esporte" id="esporte" placeholder="Insira seu esporte favorito">
         </div>
-        <div class="caixa">
+        <div class="radio">
             <legend>Receber Novidades?</legend>
-            <input type="radio" name="novidades" id="q">Sim
-            <input type="radio" name="novidades" id="q">Não
+            <div id="simnao">
+            <input type="radio" name="novidades" id="sim" value="Sim">Sim
+            <input type="radio" name="novidades" id="nao" value="Nao">Não
+            </div>
+            <br><br>
+        <div class="botao">
+            <button type="submit">Finalizar Cadastro</button>
+            <br>
+            <input type="button" onclick="validarCadastro()" value="Gerar JSON">
         </div>
     </form>
 </body>
-
 </html>
