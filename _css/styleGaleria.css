@@ -70,10 +70,6 @@
 
 body {
     background-color: #CFB645;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .menu {
@@ -200,6 +196,8 @@ img {
 h2 {
     z-index: 100;
     bottom: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modal-content {
@@ -213,7 +211,7 @@ h2 {
 
 #rodape {
     display: flex;
-    padding: 20px 30px;
+    padding: 20px 40px;
     background-color: #121211;
     color: white;
     align-items: center;
