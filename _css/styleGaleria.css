@@ -66,6 +66,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -88,13 +89,23 @@ body {
     width: 75%;
     justify-content: space-around;
     margin: 200px;
-    margin-top: 70px;
+    position: relative;
+    bottom: 135px;
     list-style-type: none;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
+    transition: 0.8s;
+}
+
+
+.menu a:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
     transition: 0.8s;
 }
 
@@ -112,13 +123,6 @@ img {
     margin-left: 15px;
 }
 
-.menu a:hover {
-    background-color: aliceblue;
-    color: black;
-    border-radius: 20px;
-    padding: 10px;
-    transition: 0.8s;
-}
 
 #descricao {
     font-size: 28px;
@@ -126,19 +130,7 @@ img {
 
 }
 
-.caixaDoLanches {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
-}
 
-.caixaDoLanches img {
-    width: 450px;
-    height: 300px;
-    border-radius: 20px;
-}
 
 .imgG {
     width: 250px;
@@ -146,6 +138,23 @@ img {
     border-radius: 20px;
 }
 
+video{
+    
+    border: 15px solid #645419;
+    width: 350px;
+    height: 350px;
+    box-shadow: 3px 3px #E5322A;
+    position: relative;
+    transition: linear 0.25s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.caixaDoLanches video:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px #121211;
+    transition: linear 0.25s;
+}
 
 #uploadButton {
     margin-top: 20px;
@@ -175,11 +184,25 @@ img {
     transition: 0.8s;
 }
 
+.caixaDoLanches {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
 .caixaDoLanches img {
-    border: 15px solid white;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.caixaDoLanches img {
+    border: 15px solid #645419;
     width: 350px;
     height: 350px;
-    box-shadow: 3px 3px red;
+    box-shadow: 3px 3px #E5322A;
     position: relative;
     transition: linear 0.25s;
     border-radius: 10px;
@@ -189,7 +212,7 @@ img {
 
 .caixaDoLanches img:hover {
     transform: scale(1.1);
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px #121211;
     transition: linear 0.25s;
 }
 
@@ -197,7 +220,9 @@ h2 {
     z-index: 100;
     bottom: 100px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
 }
 
 .modal-content {
@@ -208,6 +233,7 @@ h2 {
     width: 80%;
     height: 80%;
 }
+
 
 #rodape {
     display: flex;

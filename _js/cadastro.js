@@ -54,3 +54,20 @@ function validaForm(){
 
     return true;
 }
+
+document.getElementById("cadastroForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch("../php/bd/registrar_cadastro.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("resultado").innerHTML = data;
+    })
+    .catch(error => console.error("Erro:", error));
+});
+

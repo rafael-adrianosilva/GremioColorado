@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de Eventos</title>
     <link rel="stylesheet" href="_css/agenda.css">
+    <script src="_js/agenda.js"></script>
+
 </head>
 
 <body>
@@ -34,6 +36,20 @@
     </div>
     <h1>Agenda de eventos</h1>
 
+    <div id="adicionar-evento">
+        <h2>Adicionar Novo Evento</h2>
+        <br>
+        <form id="form-evento">
+            <label for="nova-data">Data (DD/MM):</label>
+            <input type="text" id="nova-data" required placeholder="Ex: 25/12">
+            <br>
+            <label for="novo-info">Descrição do Evento:</label>
+            <input type="text" id="novo-info" required placeholder="Ex: Natal">
+            <br>
+            <button type="submit">Adicionar à Agenda</button>
+        </form>
+    </div>
+
     <div id="agenda">
         <div class="date">11/05</div>
         <div class="info">Dia das Mães</div><br>
@@ -44,7 +60,7 @@
         <div class="date">30/10</div>
         <div class="info">Dia das Bruxas</div><br>
     </div>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div id="rodape">
         <img src="_img/gremiocolorado.png" alt="" id="logoRodape">
