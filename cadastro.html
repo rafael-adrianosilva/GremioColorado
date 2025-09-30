@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastre-se</title>
     <link rel="stylesheet" href="_css/cadastroStyle.css">
     <script src="_js/cadastro.js" defer></script>
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <div class="menu">
 
         <div class="logo">
@@ -31,8 +32,13 @@
             </li>
         </ul>
     </div>
+    <!-- Título -->
     <h2 style="margin-top: 50px;">Cadastro de Alunos</h2>
-    <form id="cadastroForm" onsubmit="return validaForm()">
+
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <!-- Action redimensiona para a confirmação-->
+    <!-- Onsubmit valida o Regex -->
+    <form action="cadastro_Confirmado.html" onsubmit="return validaForm()">
         <div class="caixa">
             <legend>Nome:</legend>
             <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
@@ -67,13 +73,17 @@
         </div>
         <br><br>
         <div class="botao">
+            <!-- Envia o Formulário -->
             <button type="submit">Finalizar Cadastro</button>
             <br>
+            <!-- Gera o JSON (como o nome já diz)-->
             <button onclick="validarCadastro()">Gerar JSON</button>
         </div>
     </form>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- separar o formulário do rodapé -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+    <!-- RODAPÉ DA PÁGINA -->
     <div id="rodape">
         <img src="_img/gremiocolorado.png" alt="" id="logoRodape">
         <div>

@@ -43,10 +43,12 @@ function validaForm(){
         alert("Nome está inválido. Insira o nome corretamente");
         return false;
     }
+    
     if (!emailRegex.test(email)){
         alert("E-mail está inválido. Insira o email corretamente");
         return false;
     }
+    
     if (!telefoneRegex.test(telefone)){
         alert("Numero Inválido. Insira o número corretamente");
         return false;
@@ -54,20 +56,3 @@ function validaForm(){
 
     return true;
 }
-
-document.getElementById("cadastroForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let formData = new FormData(this);
-
-    fetch("../php/bd/registrar_cadastro.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("resultado").innerHTML = data;
-    })
-    .catch(error => console.error("Erro:", error));
-});
-
